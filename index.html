@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cafetería MC — La cafetería que sigue abierta, en Rancagua</title>
+<meta name="description" content="Cafetería MC, Av. Illanes 433, Rancagua. Terraza con luces, rústicos de mechada, pizzas, helados y pastelería. 4,9 ★ con 37 reseñas en Google. Carta con precios reales.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#22262E">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2322262E'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='30' font-weight='bold' fill='%23FF3DAE'%3EMC%3C/text%3E%3C/svg%3E">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CL">
+<meta property="og:site_name" content="Cafetería MC">
+<meta property="og:title" content="Cafetería MC — la que sigue abierta cuando el resto cerró">
+<meta property="og:description" content="Terraza con luces en Av. Illanes 433, Rancagua. Rústicos de mechada, pizzas y helados. 4,9 ★ con 37 reseñas.">
+<meta property="og:url" content="https://mmedinacode.github.io/Cafeteria-MC-Web/">
+<meta property="og:image" content="https://mmedinacode.github.io/Cafeteria-MC-Web/fotos/terraza.jpg">
+<meta property="og:image:alt" content="Terraza de Cafetería MC con guirnaldas de luces y letrero neón">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Spline+Sans:wght@300;400;500;600;700&family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Loader: el neón encendiéndose, igual que su letrero -->
+<div id="loader" class="loader" aria-hidden="true">
+  <p class="loader-mc">MC</p>
+  <p class="loader-txt">Cafetería</p>
+</div>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="head">
+  <div class="head-in">
+    <a class="brand" href="#inicio" data-tab="inicio" aria-label="Cafetería MC, ir al inicio">
+      <span class="brand-mark" aria-hidden="true">MC</span>
+      <span class="brand-txt"><strong>Cafetería</strong><em>Av. Illanes 433 · Rancagua</em></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="nav" aria-label="Secciones">
+      <ul class="nav-links">
+        <li><a href="#inicio"    data-tab="inicio" class="on">Inicio</a></li>
+        <li><a href="#nosotros"  data-tab="nosotros">Nosotros</a></li>
+        <li><a href="#carta"     data-tab="carta">Carta</a></li>
+        <li><a href="#resenas"   data-tab="resenas">Reseñas</a></li>
+        <li><a href="#redes"     data-tab="redes">Redes</a></li>
+        <li><a href="#visitanos" data-tab="visitanos">Visítanos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ══════════════ INICIO ══════════════ -->
+<section class="tab-panel on" data-tab-panel="inicio" id="inicio">
+  <div class="hero">
+    <div class="hero-txt">
+      <p class="eyebrow">Av. Illanes 433 · Rancagua</p>
+      <h1>Seguimos abiertos<br><em>cuando el resto cerró.</em></h1>
+      <p class="hero-lead">
+        Terraza con luces, rústicos de mechada, pizzas y copas de helado.
+        Para esa hora en que ya no queda nada abierto en Rancagua y las
+        ganas de algo rico siguen ahí.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="#carta" data-tab="carta">Ver la carta</a>
+        <a class="btn btn-ghost" href="#resenas" data-tab="resenas">Leer las reseñas</a>
+      </div>
+      <p class="hero-open">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Con estacionamiento, aire acondicionado y mantas en la terraza</span>
+      </p>
+    </div>
+    <figure class="hero-img">
+      <img src="fotos/terraza.jpg" alt="Terraza de Cafetería MC con guirnaldas de luces, césped y letrero neón" fetchpriority="high" decoding="async">
+      <figcaption class="hero-cap">La terraza, de noche</figcaption>
+    </figure>
+  </div>
+
+  <div class="wrap">
+    <div class="cifras reveal stagger">
+      <div><b data-contar>4,9</b><span>★ en Google</span></div>
+      <div><b data-contar>37</b><span>reseñas</span></div>
+      <div><b data-contar>35</b><span>precios reales</span></div>
+      <div><b>$2.190</b><span>desde</span></div>
+    </div>
+
+    <div class="tri reveal stagger">
+      <article class="tri-card">
+        <h3>La mejor mechada de Rancagua</h3>
+        <p>Lo dice una reseña, textual. El Rústico Mechada y el Mechada Luco
+           son lo más pedido de la carta salada.</p>
+        <a href="#carta" data-tab="carta" class="lnk">Ver la carta →</a>
+      </article>
+      <article class="tri-card">
+        <h3>Terraza para cualquier clima</h3>
+        <p>Guirnaldas de luces, estufa afuera, aire acondicionado adentro
+           y mantas para los clientes. También lo cuenta una reseña.</p>
+        <a href="#nosotros" data-tab="nosotros" class="lnk">Conocer el local →</a>
+      </article>
+      <article class="tri-card">
+        <h3>Precios justos, de verdad</h3>
+        <p>Los 35 valores de la carta están acá, transcritos de su carta
+           impresa. Desde $2.190 una medialuna.</p>
+        <a href="#visitanos" data-tab="visitanos" class="lnk">Cómo llegar →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ NOSOTROS ══════════════ -->
+<section class="tab-panel" data-tab-panel="nosotros" id="nosotros">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Nosotros</p>
+      <h2>Un neón encendido<br>en Av. Illanes</h2>
+      <p class="sec-lead">
+        Una taza de neón blanco, "MC" en oro y "Cafetería" en rosa. Eso se
+        ve desde la calle.
+      </p>
+    </header>
+
+    <div class="split reveal">
+      <figure class="split-img">
+        <img src="fotos/letrero.jpg" alt="Letrero exterior de Cafetería MC en neón sobre panel oscuro" loading="lazy" decoding="async">
+        <figcaption>El letrero, desde la calle</figcaption>
+      </figure>
+      <div class="split-txt">
+        <h3>Abierto cuando ya no queda nada</h3>
+        <blockquote class="cita">
+          “Por el horario de salida de mi pareja nunca encontramos un café
+          abierto y quedamos con las ganas de darnos un gustito, justo
+          revisando RRSS encontré este lugar y cerraba tarde.”
+          <cite>Patricia Guzmán, Local Guide con 210 reseñas</cite>
+        </blockquote>
+        <p>
+          Es lo que más se repite en sus reseñas y lo que Google resume de
+          ellas: <strong>el conveniente horario de atención hasta tarde</strong>.
+        </p>
+      </div>
+    </div>
+
+    <div class="split split-rev reveal">
+      <figure class="split-img">
+        <img src="fotos/neon.jpg" alt="Letrero neón rosa de MC Cafetería dentro del local" loading="lazy" decoding="async">
+        <figcaption>El neón de adentro</figcaption>
+      </figure>
+      <div class="split-txt">
+        <h3>Terraza con luces, y mantas si hace frío</h3>
+        <p>
+          Guirnaldas colgando sobre césped verde, mesas afuera y ese neón
+          rosa. Por dentro son sólo dos mesas, pero con
+          <strong>aire acondicionado</strong>; y afuera hay
+          <strong>estufa y mantas para los clientes</strong>.
+        </p>
+        <p>
+          Otra reseña lo resume en una palabra: <em>“muy instagrameable”</em>.
+          Y una tercera suma el dato que nadie publica:
+          <strong>tienen estacionamiento</strong>.
+        </p>
+        <a href="#visitanos" data-tab="visitanos" class="lnk">Cómo llegar →</a>
+      </div>
+    </div>
+
+    <div class="gal reveal stagger">
+      <figure><img src="fotos/mechada.jpg" alt="Rústico de mechada servido en tabla de madera" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/tetera-rosada.jpg" alt="Tetera y taza rosadas servidas en la mesa" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/cafe-copa.jpg" alt="Café con crema servido en copa" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/copa-helado.jpg" alt="Copa de helado con crema" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/kuchen.jpg" alt="Porción de kuchen en plato" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/mesa-servida.jpg" alt="Mesa servida con sándwich, waffle y café" loading="lazy" decoding="async"></figure>
+    </div>
+    <p class="note">Todas las fotos son del propio local, de su ficha de Google Maps.</p>
+  </div>
+</section>
+
+<!-- ══════════════ CARTA ══════════════ -->
+<section class="tab-panel" data-tab-panel="carta" id="carta">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Carta</p>
+      <h2>35 precios reales,<br>de su propia carta</h2>
+      <p class="sec-lead">
+        Transcritos de la foto de su carta impresa, publicada por el local
+        en su ficha de Google.
+      </p>
+    </header>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Platos salados</h3>
+        <span class="carta-bloque-n">13 opciones</span>
+      </header>
+      <div class="menu reveal stagger">
+        <article class="menu-item">
+          <img src="fotos/mechada.jpg" alt="Rústico de mechada en tabla" loading="lazy" decoding="async">
+          <div><h4>Rústico Mechada Luco</h4><p>El más pedido junto al Rústico Mechada.</p></div>
+          <span class="price">$7.990</span></article>
+        <article class="menu-item"><div><h4>Rústico Mechada</h4><p>“La mejor mechada que he probado en Rancagua”, dice una reseña.</p></div><span class="price">$7.990</span></article>
+        <article class="menu-item"><div><h4>Rústico Ave Mayo</h4><p>De su carta impresa.</p></div><span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Pizza Mechada</h4><p>Pizza de 19 cm.</p></div><span class="price">$6.490</span></article>
+        <article class="menu-item"><div><h4>Pizza Tradicional</h4><p>Pizza de 19 cm.</p></div><span class="price">$5.490</span></article>
+        <article class="menu-item"><div><h4>Pizza Salame</h4><p>Pizza de 19 cm.</p></div><span class="price">$5.490</span></article>
+        <article class="menu-item"><div><h4>Pizza Vegetariana</h4><p>Pizza de 19 cm.</p></div><span class="price">$5.490</span></article>
+        <article class="menu-item"><div><h4>Rústico MC</h4><p>El de la casa.</p></div><span class="price">$5.290</span></article>
+        <article class="menu-item"><div><h4>Rústico Vegetariano</h4><p>De su carta impresa.</p></div><span class="price">$5.290</span></article>
+        <article class="menu-item"><div><h4>Selladitos MC</h4><p>De su carta impresa.</p></div><span class="price">$4.490</span></article>
+        <article class="menu-item"><div><h4>Croisant Jamón Queso</h4><p>Así está escrito en su carta.</p></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Medialuna Jamón Queso</h4><p>De su carta impresa.</p></div><span class="price">$3.590</span></article>
+        <article class="menu-item"><div><h4>Tostada Palta</h4><p>De su carta impresa.</p></div><span class="price">$3.490</span></article>
+      </div>
+    </section>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Helados y postres</h3>
+        <span class="carta-bloque-n">11 opciones</span>
+      </header>
+      <div class="menu reveal stagger">
+        <article class="menu-item">
+          <img src="fotos/copa-helado.jpg" alt="Copa de helado con crema" loading="lazy" decoding="async">
+          <div><h4>Copa Payaso</h4><p>De su carta impresa.</p></div>
+          <span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Banana Split</h4><p>De su carta impresa.</p></div><span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Waffle Helado</h4><p>“Está 10/10”, según la reseña de Natalia Abarca.</p></div><span class="price">$6.590</span></article>
+        <article class="menu-item"><div><h4>Celestino Artesanal</h4><p>De su carta impresa.</p></div><span class="price">$6.390</span></article>
+        <article class="menu-item"><div><h4>Copa Triple</h4><p>De su carta impresa.</p></div><span class="price">$6.290</span></article>
+        <article class="menu-item"><div><h4>Celestino MC</h4><p>El de la casa.</p></div><span class="price">$5.490</span></article>
+        <article class="menu-item"><div><h4>Copa Duo</h4><p>De su carta impresa.</p></div><span class="price">$5.490</span></article>
+        <article class="menu-item"><div><h4>Waffle Dulce</h4><p>De su carta impresa.</p></div><span class="price">$5.490</span></article>
+        <article class="menu-item"><div><h4>Helado Doble (cono)</h4><p>De su carta impresa.</p></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Brownnie Helado</h4><p>Así está escrito en su carta.</p></div><span class="price">$4.690</span></article>
+        <article class="menu-item"><div><h4>Helado Simple (cono)</h4><p>De su carta impresa.</p></div><span class="price">$3.490</span></article>
+      </div>
+    </section>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Pastelería</h3>
+        <span class="carta-bloque-n">11 opciones</span>
+      </header>
+      <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Bolsa de Alfajor</h4><p>Alfajor de maicena y chocolate.</p></div><span class="price">$4.590</span></article>
+        <article class="menu-item">
+          <img src="fotos/kuchen.jpg" alt="Porción de kuchen" loading="lazy" decoding="async">
+          <div><h4>Kuchen de Manzana</h4><p>De su carta impresa.</p></div>
+          <span class="price">$4.290</span></article>
+        <article class="menu-item"><div><h4>Pie de limón</h4><p>Uno de los dos que Google destaca de sus reseñas.</p></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Torta porción</h4><p>La de panqueque de chocolate es la favorita de una clienta.</p></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Rollo de Canela</h4><p>El otro que Google destaca de sus reseñas.</p></div><span class="price">$3.490</span></article>
+        <article class="menu-item"><div><h4>Panqueques (2 unidades)</h4><p>De su carta impresa.</p></div><span class="price">$3.490</span></article>
+        <article class="menu-item"><div><h4>Medialina Nutella</h4><p>Así está escrito en su carta.</p></div><span class="price">$2.790</span></article>
+        <article class="menu-item"><div><h4>Medialuna Manjar</h4><p>De su carta impresa.</p></div><span class="price">$2.490</span></article>
+        <article class="menu-item"><div><h4>Donnas</h4><p>De su carta impresa.</p></div><span class="price">$2.290</span></article>
+        <article class="menu-item"><div><h4>Brownnie</h4><p>Así está escrito en su carta.</p></div><span class="price">$2.290</span></article>
+        <article class="menu-item"><div><h4>Medialuna Simple</h4><p>Lo más barato de la carta.</p></div><span class="price">$2.190</span></article>
+      </div>
+    </section>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Para tomar</h3>
+        <span class="carta-bloque-n">4 opciones</span>
+      </header>
+      <div class="aviso reveal">
+        <strong>La cara de la carta con los cafés no se alcanza a leer</strong>
+        en la foto, así que estos van sin precio. Los nombres sí son reales:
+        salen de sus reseñas.
+      </div>
+      <div class="menu reveal stagger">
+        <article class="menu-item">
+          <img src="fotos/cafe-copa.jpg" alt="Café con crema servido en copa" loading="lazy" decoding="async">
+          <div><h4>Café Bombón</h4><p>Nombrado en dos reseñas distintas.</p></div>
+          <span class="price">Consultar</span></article>
+        <article class="menu-item">
+          <img src="fotos/tetera-rosada.jpg" alt="Tetera rosada servida en la mesa" loading="lazy" decoding="async">
+          <div><h4>Té de la abuela</h4><p>“Lo más rico es el té de la abuela”, dice Benjamín Molina.</p></div>
+          <span class="price">Consultar</span></article>
+        <article class="menu-item"><div><h4>Café</h4><p>“Muy rico el café en todas sus preparaciones”, según una clienta habitual.</p></div><span class="price">Consultar</span></article>
+        <article class="menu-item"><div><h4>Tés e infusiones</h4><p>Servidos en tetera.</p></div><span class="price">Consultar</span></article>
+      </div>
+    </section>
+
+    <p class="note">
+      Precios transcritos de <em>fotos/carta.jpg</em>. Conviene confirmarlos
+      al pedir.
+    </p>
+    <!--
+      ⚠️ PLACEHOLDER MARCADO — FALTAN LOS PRECIOS DE LOS CAFÉS.
+      La carta impresa tiene una segunda cara con la sección de cafés que se
+      transparenta por detrás del papel pero NO es legible. Por la regla del
+      proyecto, esos precios no se publican. Los nombres que sí aparecen
+      (café bombón, té de la abuela) vienen de reseñas reales.
+    -->
+  </div>
+</section>
+
+<!-- ══════════════ RESEÑAS ══════════════ -->
+<section class="tab-panel" data-tab-panel="resenas" id="resenas">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Reseñas</p>
+      <h2>4,9 ★ · 37 reseñas</h2>
+      <p class="sec-lead">Reales, copiadas tal cual de su ficha de Google Maps.</p>
+    </header>
+
+    <div class="revs reveal stagger">
+      <blockquote class="rev">
+        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+        <p>Me encanto el lugar y el horario genial, por el horario de salida de mi pareja nunca encontramos un café abierto y quedamos con las ganas de darnos un gustito, justo revisando RRSS encontré este lugar y cerraba tarde fuimos y quedamos…</p>
+        <footer><b>Patricia Guzmán Gregoriana</b><span>Local Guide · 210 reseñas</span></footer>
+      </blockquote>
+
+      <blockquote class="rev">
+        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+        <p>Lugar lindo y acogedor ! Muy instagrameable! Y tienen la mejor mechada que probado en Rancagua! 1000% recomendado 💯</p>
+        <footer><b>Jennifer Muñoz Nuñez</b><span>1 reseña</span></footer>
+      </blockquote>
+
+      <blockquote class="rev">
+        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+        <p>El lugar es bonito. Adentro hay dos mesas y el espacio cuenta con aire acondicionado. Afuera vi una estufa, aunque no estaba encendida. Además, cuentan con mantas para los clientes.</p>
+        <footer><b>Vanesa Bossio</b><span>Local Guide · 251 reseñas</span></footer>
+      </blockquote>
+    </div>
+
+    <div class="rev-cta reveal">
+      <a class="btn btn-solid" href="https://search.google.com/local/reviews?placeid=ChIJ4cclYABDY5YRMUrYVTED758" target="_blank" rel="noopener">Leer las 37 reseñas</a>
+      <a class="btn btn-ghost" href="https://search.google.com/local/writereview?placeid=ChIJ4cclYABDY5YRMUrYVTED758" target="_blank" rel="noopener">Dejar una reseña</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ REDES ══════════════ -->
+<section class="tab-panel" data-tab-panel="redes" id="redes">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Redes</p>
+      <h2>Dónde encontrarnos</h2>
+      <p class="sec-lead">Sólo lo verificado. Ningún perfil inventado.</p>
+    </header>
+
+    <div class="redes">
+      <article class="red-card reveal">
+        <a class="red-card-head" href="https://www.google.com/maps/search/?api=1&query=Cafeter%C3%ADa%20MC&query_place_id=ChIJ4cclYABDY5YRMUrYVTED758" target="_blank" rel="noopener">
+          <span class="red-logo red-logo-map"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C7.31 0 3.5 3.81 3.5 8.5c0 6.38 8.5 15.5 8.5 15.5s8.5-9.12 8.5-15.5C20.5 3.81 16.69 0 12 0zm0 11.6a3.1 3.1 0 110-6.2 3.1 3.1 0 010 6.2z"/></svg></span>
+          <span class="red-card-txt">
+            <b>Ficha en Google Maps</b>
+            <em>4,9 ★ · 37 reseñas</em>
+          </span>
+          <span class="red-card-cta">Abrir →</span>
+        </a>
+        <a class="red-grid" href="https://www.google.com/maps/search/?api=1&query=Cafeter%C3%ADa%20MC&query_place_id=ChIJ4cclYABDY5YRMUrYVTED758" target="_blank" rel="noopener"
+           data-cta="Ver la ficha" aria-label="Abrir la ficha de Cafetería MC en Google Maps">
+          <figure><img src="fotos/terraza.jpg" alt="La terraza con luces" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/mechada.jpg" alt="Rústico de mechada" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/neon.jpg" alt="El neón de adentro" loading="lazy" decoding="async"></figure>
+        </a>
+        <p class="red-pie">Ojo: su ficha no tiene horario ni teléfono publicados.</p>
+      </article>
+    </div>
+
+    <!--
+      ⚠️ SIN REDES NI TELÉFONO VERIFICADOS.
+      · Instagram: NO aparece indexado en ninguna búsqueda. PERO la reseña de
+        Patricia Guzmán dice que encontró el local "revisando RRSS", así que
+        una cuenta existe. NO se inventa el handle: hay que preguntárselo.
+      · Teléfono: su ficha no publica ninguno ("Añadir número de teléfono").
+      · La ficha ni siquiera está reclamada por el dueño.
+      Por eso el sitio no tiene flotante de Instagram ni de teléfono: sólo el
+      de "cómo llegar" no aplica (se sacó del estándar), así que queda sólo
+      el de volver arriba. Cuando aparezca un canal real, se suma.
+    -->
+    <div class="aviso reveal">
+      <strong>Esto es lo que más les está costando:</strong> su ficha de
+      Google <b>no tiene horario, no tiene teléfono y ni siquiera está
+      reclamada</b>. Y su mejor ventaja —seguir abiertos cuando el resto
+      cerró— es justamente el dato que falta. La clienta que dejó la mejor
+      reseña los encontró de casualidad revisando redes, no por Google.
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ VISÍTANOS ══════════════ -->
+<section class="tab-panel" data-tab-panel="visitanos" id="visitanos">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Visítanos</p>
+      <h2>Av. Illanes 433</h2>
+    </header>
+
+    <div class="visit reveal">
+      <div class="visit-info">
+        <div class="vblock">
+          <h3>Dirección</h3>
+          <p>Av. Illanes 433<br>Rancagua, Región de O'Higgins</p>
+          <p class="sub">Plus Code R7Q8+FH · con estacionamiento</p>
+        </div>
+
+        <!--
+          ⚠️ SIN TABLA DE HORARIO A PROPÓSITO.
+          Su ficha de Google NO publica horario ("Añadir horario"). No se
+          inventa ninguno, igual que en los 9 locales del portafolio sin
+          horario publicado. window.HORARIO no se declara, así que
+          horario.js no hace nada — que es lo correcto.
+        -->
+        <div class="vblock">
+          <h3>Horario</h3>
+          <div class="vtel vtel-sin">
+            <span class="vtel-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 10.6V6h-2v7.4l5.3 3.2 1-1.7-4.3-2.3z"/></svg>
+            </span>
+            <span class="vtel-txt">
+              <b>Horario no publicado</b>
+              <em>Google no tiene ninguno registrado para este local</em>
+            </span>
+          </div>
+          <p class="sub">
+            Lo que sí dicen sus clientes es que <strong>cierran tarde</strong>:
+            es lo que Google resume de sus reseñas. Conviene confirmar el
+            horario del día antes de ir.
+          </p>
+        </div>
+
+        <div class="vblock">
+          <h3>Contacto</h3>
+          <div class="vtel vtel-sin">
+            <span class="vtel-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+            </span>
+            <span class="vtel-txt">
+              <b>Sin teléfono publicado</b>
+              <em>Tampoco figura en su ficha de Google</em>
+            </span>
+          </div>
+        </div>
+
+        <div class="vblock">
+          <h3>Cómo se puede pedir</h3>
+          <ul class="vpedir">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v2H3V5zm2 4h14l-1 5h-4v6h-2v-6H6L5 9zm-1 12h16v2H4v-2z"/></svg> Consumo en el lugar</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7V6a6 6 0 1112 0v1h3v14a2 2 0 01-2 2H5a2 2 0 01-2-2V7h3zm2 0h8V6a4 4 0 10-8 0v1z"/></svg> Para llevar</li>
+          </ul>
+          <p class="sub">Servicios declarados en su ficha de Google.</p>
+        </div>
+
+        <div class="vblock vblock-cta">
+          <a class="btn btn-solid" href="https://www.google.com/maps/dir/?api=1&destination=Cafeter%C3%ADa%20MC%20Av%20Illanes%20433%20Rancagua&destination_place_id=ChIJ4cclYABDY5YRMUrYVTED758" target="_blank" rel="noopener">Cómo llegar</a>
+          <a class="btn btn-ghost" href="https://waze.com/ul?ll=-34.1613655,-70.733548&navigate=yes" target="_blank" rel="noopener">Ir con Waze</a>
+        </div>
+      </div>
+
+      <div class="visit-map">
+        <!-- ⚠️ SIN loading="lazy": vive en pestaña display:none y no cargaría.
+             El filtro invierte el mapa para que no quede un recuadro blanco
+             roto en medio del sitio oscuro. Mismo truco ya usado en el
+             proyecto de temática arcade. -->
+        <iframe
+          title="Mapa de Cafetería MC en Av. Illanes 433, Rancagua"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300!2d-70.733548!3d-34.1613655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966343006025c7e1%3A0x9fef033155d84a31!2sCafeter%C3%ADa%20MC!5e0!3m2!1ses!2scl!4v1757900000000!5m2!1ses!2scl"
+          width="100%" height="100%" style="border:0" allowfullscreen=""
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Flotantes. Este local NO tiene teléfono ni Instagram verificados, así
+     que a la derecha queda sólo el "volver arriba". No se inventa ninguno.
+     Izquierda libre para delivery: su ficha no declara entrega a domicilio. -->
+<div class="float float-right">
+  <button class="fab fab-top" id="toTop" data-label="Volver arriba" aria-label="Volver arriba"
+    style="background:var(--neon-rosa);color:#fff"><span aria-hidden="true">↑</span></button>
+</div>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div>
+      <p class="foot-brand">Cafetería MC</p>
+      <p>Av. Illanes 433 · Rancagua, O'Higgins</p>
+      <p>Con estacionamiento · Terraza y salón climatizado</p>
+    </div>
+    <div class="foot-demo">
+      <p><strong>Esta es una demo.</strong> No es el sitio oficial de Cafetería MC.</p>
+      <p>Hecha con datos públicos reales de su ficha de Google Maps
+         (verificados el 15-09-2026) para mostrarle al local cómo se vería
+         su página web.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* window.HORARIO NO se declara a propósito: Google no publica horario de
+   este local y no se inventa ninguno. horario.js no hace nada sin él.
+   window.REDES tampoco: no hay ninguna cuenta verificada. */
+</script>
+
+<script src="script.js"></script>
+<script src="vida.js"></script>
+<script src="carta-fotos.js"></script>
+<script src="carrito.js"></script>
+<script src="horario.js"></script>
+<script src="redes.js"></script>
+</body>
+</html>
