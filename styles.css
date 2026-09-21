@@ -651,3 +651,81 @@ h1,h2,h3,h4{
 .horario-semana li.hs-hoy{ background:rgba(255,77,157,.13); box-shadow:inset 3px 0 0 var(--neon-rosa); }
 .horario-semana li.hs-hoy span{ font-weight:700; }
 @media (max-width:420px){ .horario-semana li{ padding:8px 10px; font-size:14px } }
+
+
+/* ══════════════════════════════════════════════════════════════════════
+   21-09-2026 · Redes y Contacto
+   ══════════════════════════════════════════════════════════════════════ */
+
+/* La fila salía dentada: tres tarjetas de 161, 131 y 203 px con
+   align-items:start. En vez de estirarlas —que deja medio recuadro
+   vacío— se reparte la sección: arriba las dos que llevan foto, y el
+   WhatsApp abajo como banda ancha, que es lo que es. */
+.redes{ grid-template-columns:repeat(2,minmax(0,1fr)); align-items:stretch; }
+.redes .red-card{ height:100%; }
+.red-pie{ margin-top:auto; }
+@media (max-width:760px){ .redes{ grid-template-columns:1fr } }
+
+.red-card-ig .red-card-head{ align-items:center; }
+.tick{ color:#3897F0; font-size:.85em; }
+
+/* La portada del Instagram: una sola foto ancha, no rejilla de tres.
+   Su grilla es casi toda gente identificable y no se publican caras. */
+.red-cover{ margin:0; overflow:hidden; aspect-ratio:4/3; }
+.red-cover img{ width:100%; height:100%; object-fit:cover; display:block;
+  transition:transform .6s var(--fx); }
+.red-card-ig:hover .red-cover img{ transform:scale(1.05); }
+
+/* La banda de WhatsApp, a lo ancho de las dos columnas. */
+.red-card-ancha{
+  grid-column:1 / -1;
+  display:grid; grid-template-columns:auto 1fr auto; align-items:center;
+  gap:16px; padding:18px 20px; text-decoration:none; color:inherit;
+}
+.red-card-ancha .ancha-txt{ display:flex; flex-direction:column; gap:2px; min-width:0; }
+.red-card-ancha .ancha-txt b{ font-size:19px; font-variant-numeric:tabular-nums; }
+.red-card-ancha .ancha-txt em{ font-style:normal; font-size:13.5px; color:var(--c-suave); }
+.red-card-ancha .ancha-cta{ font-size:13px; font-weight:700; letter-spacing:.04em;
+  text-transform:uppercase; color:#25D366; white-space:nowrap; }
+@media (max-width:520px){
+  .red-card-ancha{ grid-template-columns:auto 1fr; }
+  .red-card-ancha .ancha-cta{ grid-column:2; }
+}
+
+/* ── Contacto de Visítanos ─────────────────────────────────────────────
+   .contact-box no tenía una sola regla: eran dos <a> con dos <p> dentro,
+   sin estilo ninguno. Ahora son dos botones de verdad, con el color de
+   cada plataforma en el icono y una sola cosa pinchable por fila. */
+.cbtn{
+  display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:14px;
+  padding:13px 15px; margin-bottom:9px; text-decoration:none; color:inherit;
+  background:var(--c-bloque); border:1px solid var(--c-linea); border-radius:12px;
+  transition:transform .22s var(--fx), box-shadow .22s var(--fx), border-color .22s var(--fx);
+}
+.cbtn:last-child{ margin-bottom:0; }
+.cbtn:hover{ transform:translateY(-2px); box-shadow:var(--c-sombra-alta); }
+.cbtn:active{ transform:scale(.99); }
+.cbtn-ico{ width:40px; height:40px; border-radius:11px; display:grid; place-content:center;
+  color:#fff; flex:none; }
+.cbtn-ico svg{ width:21px; height:21px; fill:currentColor; display:block; }
+.cbtn-txt{ display:flex; flex-direction:column; line-height:1.25; min-width:0; }
+.cbtn-txt b{ font-size:12px; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--c-suave); font-weight:700; }
+.cbtn-txt em{ font-style:normal; font-size:17px; font-weight:600;
+  font-variant-numeric:tabular-nums; overflow:hidden; text-overflow:ellipsis; }
+.cbtn-go{ font-size:19px; color:var(--c-suave); transition:transform .22s var(--fx); }
+.cbtn:hover .cbtn-go{ transform:translateX(3px); }
+
+.cbtn-wsp .cbtn-ico{ background:#25D366; }
+.cbtn-wsp:hover{ border-color:#25D366; }
+.cbtn-ig .cbtn-ico{ background:linear-gradient(45deg,#F9CE34,#EE2A7B 50%,#6228D7); }
+.cbtn-ig:hover{ border-color:#EE2A7B; }
+
+
+/* La de Google quedaba con un hueco: cabecera arriba, rejilla abajo y aire
+   muerto en medio. Lo que las empareja no es estirar nada (eso colapsaba las
+   fotos) sino que los dos bloques de imagen tengan la MISMA proporción: la
+   portada del Instagram y la rejilla de Google van las dos en 4:3. */
+.redes .red-grid{ aspect-ratio:4/3; }
+.redes .red-grid figure{ height:100%; }
+.redes .red-grid figure img{ width:100%; height:100%; object-fit:cover; }
