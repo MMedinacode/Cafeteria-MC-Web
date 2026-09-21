@@ -612,3 +612,42 @@ h1,h2,h3,h4{
    derecha. Se le reserva un poco de alto arriba SOLO a las filas que
    realmente tienen "+", para que el precio baje y no se pisen. */
 .menu-item:has(> .uc-add){padding-top:26px}
+
+
+/* ══════════════════════════════════════════════════════════════════════
+   21-09-2026
+   ══════════════════════════════════════════════════════════════════════ */
+
+/* Redes iba pegada al corte de la sección: sólo tenía separación arriba.
+   Con una sola tarjeta se notaba el doble. */
+.redes{ padding-bottom:clamp(34px,5vw,64px); gap:20px; }
+.red-card{ transition:transform .3s var(--fx), box-shadow .3s var(--fx); }
+.red-card:hover{ transform:translateY(-4px); box-shadow:var(--sombra-alta); }
+.red-grid figure{ overflow:hidden; border-radius:9px; margin:0; }
+.red-grid figure img{ transition:transform .6s var(--fx); display:block; }
+.red-card:hover .red-grid figure img{ transform:scale(1.07); }
+.red-grid figure:nth-child(2) img{ transition-delay:.04s; }
+.red-grid figure:nth-child(3) img{ transition-delay:.08s; }
+
+/* La segunda línea del hero, la de los servicios, va más discreta que la
+   del estado: el punto de color ya no le corresponde. */
+.hero-open-extra{ margin-top:6px; opacity:.85; }
+.hero-open-extra .dot{ display:none; }
+
+/* El estado de "abierto ahora" dentro de Visítanos. */
+.vblock .estado{ display:flex; align-items:center; gap:9px; font-weight:600; margin:0 0 10px; }
+
+
+/* La semana la crea horario.js con su propia clase .horario-semana, así que
+   el .horario de esta hoja no la alcanzaba: salía "Lunes15:30" sin aire. */
+.horario-semana{ list-style:none; margin:0 0 10px; padding:0; display:grid; gap:2px; }
+.horario-semana li{
+  display:grid; grid-template-columns:1fr auto; align-items:center; gap:14px;
+  padding:9px 12px; border-radius:8px; font-size:15px;
+  transition:background .2s var(--fx);
+}
+.horario-semana li:nth-child(odd){ background:rgba(0,0,0,.025); }
+.horario-semana li span:last-child{ font-variant-numeric:tabular-nums; font-weight:600; }
+.horario-semana li.hs-hoy{ background:rgba(255,77,157,.13); box-shadow:inset 3px 0 0 var(--neon-rosa); }
+.horario-semana li.hs-hoy span{ font-weight:700; }
+@media (max-width:420px){ .horario-semana li{ padding:8px 10px; font-size:14px } }

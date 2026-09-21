@@ -75,7 +75,10 @@
         <a class="btn btn-ghost" href="#resenas" data-tab="resenas">Leer las reseñas</a>
       </div>
       <p class="hero-open">
-        <span class="dot" aria-hidden="true"></span>
+        <span class="dot" id="statusDot" aria-hidden="true"></span>
+        <span data-horario-estado>Lunes a viernes desde las 15:30</span>
+      </p>
+      <p class="hero-open hero-open-extra">
         <span>Con estacionamiento, aire acondicionado y mantas en la terraza</span>
       </p>
     </div>
@@ -412,10 +415,34 @@
     <header class="sec-head reveal">
       <p class="eyebrow">Redes</p>
       <h2>Dónde encontrarnos</h2>
-      <p class="sec-lead">Sólo lo verificado. Ningún perfil inventado.</p>
+      <p class="sec-lead">Todos nuestros canales, en un solo lugar.</p>
     </header>
 
     <div class="redes">
+      <a class="red-card reveal" href="https://www.instagram.com/cafeteriamc_/" target="_blank" rel="noopener">
+        <span class="red-card-head">
+          <span class="red-logo red-logo-ig"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></span>
+          <span class="red-card-txt">
+            <b>@cafeteriamc_</b>
+            <em>Cuenta verificada · 9.504 seguidores</em>
+          </span>
+          <span class="red-card-cta">Ver perfil →</span>
+        </span>
+        <p class="red-pie">Acá publicamos todo: el menú, las novedades y las noches de bolero.</p>
+      </a>
+
+      <a class="red-card reveal" href="https://wa.me/56991284483?text=Hola%2C%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener">
+        <span class="red-card-head">
+          <span class="red-logo red-logo-wsp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 004.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm0 18.15h-.01a8.2 8.2 0 01-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 01-1.25-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.17 8.17 0 012.41 5.82c0 4.54-3.7 8.23-8.24 8.23z"/><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35z"/></svg></span>
+          <span class="red-card-txt">
+            <b>+56 9 9128 4483</b>
+            <em>WhatsApp</em>
+          </span>
+          <span class="red-card-cta">Escribir →</span>
+        </span>
+        <p class="red-pie">Por acá tomamos los pedidos y las consultas.</p>
+      </a>
+
       <article class="red-card reveal">
         <a class="red-card-head" href="https://www.google.com/maps/search/?api=1&query=Cafeter%C3%ADa%20MC&query_place_id=ChIJ4cclYABDY5YRMUrYVTED758" target="_blank" rel="noopener">
           <span class="red-logo red-logo-map"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C7.31 0 3.5 3.81 3.5 8.5c0 6.38 8.5 15.5 8.5 15.5s8.5-9.12 8.5-15.5C20.5 3.81 16.69 0 12 0zm0 11.6a3.1 3.1 0 110-6.2 3.1 3.1 0 010 6.2z"/></svg></span>
@@ -436,15 +463,10 @@
     </div>
 
     <!--
-      ⚠️ SIN REDES NI TELÉFONO VERIFICADOS.
-      · Instagram: NO aparece indexado en ninguna búsqueda. PERO la reseña de
-        Patricia Guzmán dice que encontró el local "revisando RRSS", así que
-        una cuenta existe. NO se inventa el handle: hay que preguntárselo.
-      · Teléfono: su ficha no publica ninguno ("Añadir número de teléfono").
-      · La ficha ni siquiera está reclamada por el dueño.
-      Por eso el sitio no tiene flotante de Instagram ni de teléfono: sólo el
-      de "cómo llegar" no aplica (se sacó del estándar), así que queda sólo
-      el de volver arriba. Cuando aparezca un canal real, se suma.
+      17-09-2026: Matías encontró los canales que faltaban — Instagram
+      @cafeteriamc_ (verificada, 9.504 seguidores) y el WhatsApp del Linktree.
+      Las tarjetas de Instagram y WhatsApp las arma redes.js desde
+      window.REDES; la de Google va escrita acá porque lleva rejilla de fotos.
     -->
     
   </div>
@@ -467,18 +489,19 @@
         </div>
 
         <!--
-          ⚠️ SIN TABLA DE HORARIO A PROPÓSITO.
-          Su ficha de Google NO publica horario ("Añadir horario"). No se
-          inventa ninguno, igual que en los 9 locales del portafolio sin
-          horario publicado. window.HORARIO no se declara, así que
-          horario.js no hace nada — que es lo correcto.
+          El horario sale de la bio de su Instagram (17-09-2026): su ficha de
+          Google no publica ninguno. horario.js pinta los siete días acá y
+          marca el de hoy. Hasta el 21-09 esta tabla salía vacía y en su
+          lugar se leía una línea suelta que decía "abren de tarde y cierran
+          a las 22:00, todos los días" — que además borraba el sábado, que
+          abre tres horas antes.
         -->
         <div class="vblock">
           <h3>Horario</h3>
-          <ul class="horario"></ul>
-          <p class="sub">
-            Abren de tarde y cierran a las 22:00, todos los días.
-          </p>
+          <!-- horario.js crea su propia <ul class="horario-semana"> justo
+               debajo de este <h3>. La <ul class="horario"> que había acá se
+               quedaba vacía para siempre: el módulo no la reconoce. -->
+          <p class="sub">Los horarios salen de nuestro Instagram.</p>
         </div>
 
         <div class="vblock">
@@ -523,10 +546,14 @@
 
 </main>
 
-<!-- Flotantes. Este local NO tiene teléfono ni Instagram verificados, así
-     que a la derecha queda sólo el "volver arriba". No se inventa ninguno.
+<!-- Flotantes. En el orden en que la gente los usa: Instagram primero
+     (9.504 seguidores y lo lleva la dueña), después el WhatsApp del Linktree.
      Izquierda libre para delivery: su ficha no declara entrega a domicilio. -->
 <div class="float float-right">
+  <a class="fab fab-ig" href="https://www.instagram.com/cafeteriamc_/" target="_blank" rel="noopener"
+     data-label="Instagram" aria-label="Instagram de Cafetería MC"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+  <a class="fab fab-wsp" href="https://wa.me/56991284483?text=Hola%2C%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener"
+     data-label="Escribir por WhatsApp" aria-label="Escribir por WhatsApp a Cafetería MC"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 004.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm0 18.15h-.01a8.2 8.2 0 01-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 01-1.25-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.17 8.17 0 012.41 5.82c0 4.54-3.7 8.23-8.24 8.23z"/><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35z"/></svg></a>
   <button class="fab fab-top" id="toTop" data-label="Volver arriba" aria-label="Volver arriba"
     style="background:var(--neon-rosa);color:#fff"><span aria-hidden="true">↑</span></button>
 </div>
@@ -548,9 +575,29 @@
 </footer>
 
 <script>
-/* window.HORARIO NO se declara a propósito: Google no publica horario de
-   este local y no se inventa ninguno. horario.js no hace nada sin él.
-   window.REDES tampoco: no hay ninguna cuenta verificada. */
+/* ⚠️ ESTE BLOQUE VA ANTES DE LOS MÓDULOS, SIEMPRE.
+   horario.js y redes.js leen window.HORARIO y window.REDES en cuanto
+   cargan. Hasta el 21-09-2026 este bloque estaba pegado al final del
+   <body>, después de los <script src>, así que las dos variables no
+   existían todavía cuando los módulos corrían: la tabla de horario salía
+   vacía y la pestaña Redes mostraba sólo la tarjeta de Google, que es la
+   única escrita a mano en el HTML. */
+window.HORARIO = {
+  dias: ["15:30 - 22:00","15:30 - 22:00","15:30 - 22:00","15:30 - 22:00",
+         "15:30 - 22:00","12:30 - 22:00","15:30 - 22:00"],
+  fuente: "Su bio de Instagram, 17-09-2026"
+};
+window.REDES = {
+  intro: "Su Instagram es el canal principal: lo lleva la dueña y ahí publican todo, desde el menú hasta las noches de bolero.",
+  instagram: {
+    user: "cafeteriamc_",
+    seguidores: "9.504",
+    nota: "Cuenta verificada, con 277 publicaciones.",
+    fotos: ["fotos/terraza.jpg", "fotos/neon.jpg", "fotos/mesa-servida.jpg"]
+  },
+  whatsapp: { numero: "56991284483", nota: "El que publican en su Linktree." }
+};
+
 </script>
 
 <script src="script.js"></script>
@@ -575,22 +622,5 @@
      uno especial en historias: 17 de septiembre hasta las 15:00, 18 y 19
      cerrado, vuelven el domingo 20. Eso es temporal y no se escribe aca.
 -->
-<script>
-window.HORARIO = {
-  dias: ["15:30 - 22:00","15:30 - 22:00","15:30 - 22:00","15:30 - 22:00",
-         "15:30 - 22:00","12:30 - 22:00","15:30 - 22:00"],
-  fuente: "Su bio de Instagram, 17-09-2026"
-};
-window.REDES = {
-  intro: "Su Instagram es el canal principal: lo lleva la dueña y ahí publican todo, desde el menú hasta las noches de bolero.",
-  instagram: {
-    user: "cafeteriamc_",
-    seguidores: "9.504",
-    nota: "Cuenta verificada, con 277 publicaciones.",
-    fotos: ["fotos/terraza.jpg", "fotos/neon.jpg", "fotos/mesa-servida.jpg"]
-  },
-  whatsapp: { numero: "56991284483", nota: "El que publican en su Linktree." }
-};
-</script>
 </body>
 </html>
