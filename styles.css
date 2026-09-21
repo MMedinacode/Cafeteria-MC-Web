@@ -661,10 +661,11 @@ h1,h2,h3,h4{
    align-items:start. En vez de estirarlas —que deja medio recuadro
    vacío— se reparte la sección: arriba las dos que llevan foto, y el
    WhatsApp abajo como banda ancha, que es lo que es. */
-.redes{ grid-template-columns:repeat(2,minmax(0,1fr)); align-items:stretch; }
+.redes{ grid-template-columns:repeat(3,minmax(0,1fr)); align-items:stretch; }
 .redes .red-card{ height:100%; }
 .red-pie{ margin-top:auto; }
-@media (max-width:760px){ .redes{ grid-template-columns:1fr } }
+@media (max-width:980px){ .redes{ grid-template-columns:repeat(2,minmax(0,1fr)) } }
+@media (max-width:660px){ .redes{ grid-template-columns:1fr } }
 
 .red-card-ig .red-card-head{ align-items:center; }
 .tick{ color:#3897F0; font-size:.85em; }
@@ -729,3 +730,38 @@ h1,h2,h3,h4{
 .redes .red-grid{ aspect-ratio:4/3; }
 .redes .red-grid figure{ height:100%; }
 .redes .red-grid figure img{ width:100%; height:100%; object-fit:cover; }
+
+
+/* ══════════════════════════════════════════════════════════════════════
+   21-09-2026 (2) · las tres tarjetas con la misma silueta
+   ══════════════════════════════════════════════════════════════════════ */
+
+/* Lo que se veía desparejo no era el tamaño: eran tres siluetas distintas
+   —foto grande, rejilla, y una sin nada—. Ahora las tres son iguales:
+   cabecera, bloque en 4:3 y una línea de pie. La de WhatsApp no tiene
+   foto, así que en su lugar lleva el número grande. */
+.red-card-wsp .wsp-panel{
+  aspect-ratio:4/3; display:grid; place-content:center; gap:7px; text-align:center;
+  padding:16px;
+  background:
+    radial-gradient(120% 100% at 50% 0%, rgba(37,211,102,.22), transparent 70%),
+    linear-gradient(160deg, rgba(37,211,102,.14), rgba(18,140,126,.10));
+  border-top:1px solid var(--c-linea); border-bottom:1px solid var(--c-linea);
+}
+.red-card-wsp .wsp-num{
+  font-size:clamp(20px,2.4vw,25px); font-weight:700; letter-spacing:.01em;
+  font-variant-numeric:tabular-nums; color:var(--c-tinta); white-space:nowrap;
+}
+.red-card-wsp .wsp-sub{
+  font-size:11.5px; letter-spacing:.14em; text-transform:uppercase;
+  color:#25D366; font-weight:700;
+}
+.red-card-wsp:hover .wsp-panel{ filter:brightness(1.12); }
+
+/* Contacto de Visítanos, más compacto: en móvil ocupaba demasiado. */
+.cbtn{ padding:11px 13px; gap:12px; margin-bottom:8px; border-radius:11px; }
+.cbtn-ico{ width:36px; height:36px; border-radius:10px; }
+.cbtn-ico svg{ width:19px; height:19px; }
+.cbtn-txt b{ font-size:11px; letter-spacing:.11em; }
+.cbtn-txt em{ font-size:15.5px; }
+.cbtn-go{ font-size:17px; }
